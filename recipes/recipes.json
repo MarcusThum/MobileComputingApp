@@ -1,0 +1,29 @@
+{
+    "recipes": [
+      {
+        "name": "Grilled Chicken And Vegetables",
+        "servings": 5,
+        "likes": 300,
+        "imageUrl": "https://github.com/MarcusThum/MobileComputingApp/blob/main/recipes/images/Grilled-Chicken-Vegetables.jpg?raw=true"
+      },
+      {
+        "name": "Berry Blast Acai Bowl",
+        "servings": 8,
+        "likes": 475,
+        "imageUrl": "https://github.com/MarcusThum/MobileComputingApp/blob/main/recipes/images/berry-blast-acai-bowl.jpg?raw=true"
+      },
+      {
+        "name": "Sweet Potato Cake Lemony Slaw",
+        "servings": 6,
+        "likes": 269,
+        "imageUrl": "https://github.com/MarcusThum/MobileComputingApp/blob/main/recipes/images/sweet-potato-style-slaw.jpg?raw=true"
+      },
+      {
+        "name": "Honey Butter Chicken Tenders",
+        "servings": 7,
+        "likes": 500,
+        "imageUrl": "https://github.com/MarcusThum/MobileComputingApp/blob/main/recipes/images/Honey-Butter-Chicken-Tenders.jpg?raw=true"
+      }
+    ]
+}
+  
