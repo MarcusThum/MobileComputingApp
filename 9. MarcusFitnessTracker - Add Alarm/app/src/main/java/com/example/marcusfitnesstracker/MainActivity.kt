@@ -118,11 +118,6 @@ class MainActivity : AppCompatActivity() {
                             LocalVariables.meals = loadedMeals
                         }
 
-                        val scheduleSate: State<List<SleepScheduleEntity>> = sleepViewModel.schedules.collectAsState()
-                        val scheduleValue: List<SleepScheduleEntity> = scheduleSate.value
-
-                        LocalVariables.savedSchedules = scheduleValue
-
                         appBarViewModel.AppBar()
                     }
                 }

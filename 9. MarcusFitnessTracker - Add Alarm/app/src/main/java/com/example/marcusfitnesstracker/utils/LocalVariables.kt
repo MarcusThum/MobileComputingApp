@@ -66,8 +66,6 @@ object LocalVariables {
     var age: Float = 0f
     var gender: String = ""
 
-    var savedSchedules: List<SleepScheduleEntity> = emptyList()
-
 }
 
 fun generateHeartRateData(): List<Int> {

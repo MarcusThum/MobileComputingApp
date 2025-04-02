@@ -28,6 +28,7 @@ import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.State
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateListOf
 import androidx.compose.runtime.mutableStateOf
@@ -159,8 +160,10 @@ class SleepPatternViewModel : ViewModel() {
 
             Spacer(modifier = Modifier.height(16.dp))
 
+            val schedules: State<List<SleepScheduleEntity>> = sleepDao.getAllSchedules().collectAsState(initial = emptyList())
+
             // Create a mutable state list for saved schedules as pairs of bed and wake times
-            val savedSchedules: List<SleepScheduleEntity> = LocalVariables.savedSchedules
+            val savedSchedules: MutableList<SleepScheduleEntity> = schedules.value.toMutableList()
 
             // Custom schedule card that adds the schedule to the list on click
             LabeledSleepScheduleCard(
@@ -170,6 +173,7 @@ class SleepPatternViewModel : ViewModel() {
                 onClick = {
                     // Add the current custom schedule to the saved schedules list
 //                    savedSchedules.add(Pair(bedTime, wakeUpTime))
+                    savedSchedules.add(SleepScheduleEntity(bedTime = bedTime, wakeUpTime = wakeUpTime))
                     addSchedule(sleepDao, bedTime, wakeUpTime)
                 }
             )
