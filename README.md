@@ -5,7 +5,7 @@ Mobile Computing Fitness Tracker App, with Food Planning and Sleep Monitoring
 app-release.apk
 
 ## Latest Version
-Latest Version: 9. MarcusFitnessTracker - Add Alarm
+Latest Version: 10. MarcusFitnessTracker - Add Delete Alarm
 
 ## Test Device To Use (UI Intact)
 Medium Phone - API 35
