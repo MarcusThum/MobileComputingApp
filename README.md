@@ -1,6 +1,10 @@
 # MobileComputingApp
 Mobile Computing Fitness Tracker App, with Food Planning and Sleep Monitoring
 
+## Report & Code Zip File
+Reflection - MarcusFitnessTracker.docx & PDF
+Submission-MarcusFitnessTracker.zip
+
 ## APK File
 app-release.apk
 
